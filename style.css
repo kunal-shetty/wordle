@@ -4,7 +4,6 @@
   }
   
   body {
-    display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
@@ -18,12 +17,13 @@
 }
 .toggle-btn {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 10px 20px;
+    font-size: 2em;
+    top: 15px;
+    right: 25px;
+    padding: 8px;
     border: none;
     cursor: pointer;
-    background: #008CBA;
+    background: #727272;
     color: white;
     border-radius: 5px;
 }
