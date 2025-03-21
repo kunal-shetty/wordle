@@ -16090,7 +16090,9 @@ startInteraction();
 function startInteraction() {
   document.addEventListener("click", handleMouseClick);
   document.addEventListener("keydown", handleKeyPress);
+  document.addEventListener("touchstart", handleTouchStart);
 }
+
 
 function stopInteraction() {
   document.removeEventListener("click", handleMouseClick);
@@ -16126,6 +16128,14 @@ function handleKeyPress(e) {
     return;
   }
 }
+
+function handleTouchStart(e) {
+  if (e.target.matches("[data-delete]")) {
+    e.preventDefault(); 
+    deleteKey();
+  }
+}
+
 
 function pressKey(key) {
   const activeTiles = getActiveTiles();
