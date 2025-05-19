@@ -6,10 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
   <script src="script.js" defer></script>
   <title>Wordle Clone</title>
 </head>
 <body>
+  <header style="text-align: center; margin-bottom: 1em;">
+  <h1 style="margin: 0; font-size: 2.5em;">Wordle Clone</h1>
+  <p style="margin: 0.2em 0; font-size: 1.2em; color: gray;">Guess the 5-letter word – New challenge every refresh!</p>
+</header>
+
   <div class="toggle-btn" onclick="toggleDarkMode()">🌙</div>
   <div class="alert-container" data-alert-container></div>
   <div data-guess-grid class="guess-grid">
